@@ -1,0 +1,26 @@
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               "Nico Haemhouts"
+tagline:             "Enterprise UI &amp; Web Developer"
+description:         "Peronal Blog of Nico Haemhouts, Enterprise UI &amp; Web Developer."
+url:                 http://blog.nicohaemhouts.com
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Nico Haemhouts
+  url:               https://twitter.com/nico_haemhouts
+  email:             nico.haemhouts@gmail.com
+
+# Custom vars
+version:             1.0.0
