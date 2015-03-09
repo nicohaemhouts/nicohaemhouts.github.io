@@ -1,11 +1,22 @@
 ---
 layout: default
 ---
-
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
+<section itemscope itemtype="http://schema.org/Blog">
+<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="post-title" itemprop="name headLine">{{ page.title }}</h1>
+    <div class="post-meta">
+        <time class="post-date" itemprop="datePublished" datetime="{{page.date}}">{{ page.date | date_to_string }}</time>
+        <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            by
+            <span itemprop="name">
+                <a href="{{ site.baseurl }}about" itemprop="url" rel="author">Nico Haemhouts</a>
+            </span>
+        </span>
+        <meta itemprop="keywords" content="{{page.tags}}"/>
+    </div>
+  <section itemprop="articleBody">
+      {{ content }}
+  </section>
 </article>
 
 <div class="related">
@@ -23,3 +34,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+</section>
