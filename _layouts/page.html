@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
+<div class="page" itemscope="" itemtype="http://schema.org/WebPage">
+  <h1 class="page-title" itemprop="headLine">{{ page.title }}</h1>
+  <section itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+      {{ content }}
+  </section>
 </div>
