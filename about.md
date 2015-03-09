@@ -14,5 +14,5 @@ I'm always up for a good challenge and love making difficult things easy for end
 Twitter <a href="https://twitter.com/nico_haemhouts" itemprop="sameAs">@nico_haemhouts</a> or
 connect with me on <a href="https://www.linkedin.com/in/nicohaemhouts" itemprop="sameAs">LinkeIn</a> or
 <a href="https://plus.google.com/+NicoHaemhouts01010" itemprop="sameAs">Google+</a>.</p>
-<p>Thanks for reading!</p>
+<p>Thanks for <a href="/">reading</a>!</p>
 </div>
