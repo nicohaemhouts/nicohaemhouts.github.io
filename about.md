@@ -4,7 +4,7 @@ title: About
 ---
 
 <section itemscope itemtype="http://schema.org/Person">
-<img itemprop="photo" src="{{ site.baseurl }}public/images/NicoHaemhouts.jpg" class="avatar" title="Nico Haemhouts" alt="Nico Haemhouts"/>
+<img itemprop="image" src="{{ site.baseurl }}public/images/NicoHaemhouts.jpg" class="avatar" title="Nico Haemhouts" alt="Nico Haemhouts"/>
 <p>Hello, my name is <span itemprop="name">Nico Haemhouts</span> and I'm an
 <span itemprop="jobTitle">Enterprise UI & Web Developer</span>. I specialise in Java web applications, user interfaces, Javascript,
 HTML 5 and CSS 3. I'm often called on as a coach and technical lead for the front-end. I love programming.
