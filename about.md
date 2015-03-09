@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<section itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+<section itemprop="author" itemscope itemtype="http://schema.org/Person">
 <link itemprop="url" href="{{ site.baseurl }}">
 <img itemprop="image" src="{{ site.baseurl }}public/images/NicoHaemhouts.jpg" class="avatar" title="Nico Haemhouts" alt="Nico Haemhouts"/>
 <p>Hello, my name is <span itemprop="name">Nico Haemhouts</span> and I'm an
@@ -17,5 +17,4 @@ Twitter <a href="https://twitter.com/nico_haemhouts" itemprop="sameAs">@nico_hae
 connect with me on <a href="https://www.linkedin.com/in/nicohaemhouts" itemprop="sameAs">LinkeIn</a> or
 <a href="https://plus.google.com/+NicoHaemhouts01010" itemprop="sameAs">Google+</a>.</p>
 
-<p>Thanks for reading!</p>
-</section>
+<p>Thanks for reading!</p></section>
