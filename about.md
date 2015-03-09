@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<section itemscope="" itemtype="http://schema.org/Person">
+<section rel="author" itemscope="" itemtype="http://schema.org/Person">
 <link itemprop="url" href="{{ site.baseurl }}">
 <img itemprop="image" src="{{ site.baseurl }}public/images/NicoHaemhouts.jpg" class="avatar" title="Nico Haemhouts" alt="Nico Haemhouts"/>
 <p>Hello, my name is <span itemprop="name">Nico Haemhouts</span> and I'm an
