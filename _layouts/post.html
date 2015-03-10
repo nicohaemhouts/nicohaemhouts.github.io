@@ -5,7 +5,7 @@ layout: default
 <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="post-title" itemprop="name headLine">{{ page.title }}</h1>
     <div class="post-meta">
-        <time class="post-date" itemprop="datePublished" datetime="{{page.date}}">{{ page.date | date_to_string }}</time>
+        <time class="post-date" itemprop="datePublished" datetime="{{post.date | date_to_xmlschema}}">{{ page.date | date_to_string }}</time>
         <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             by
             <span itemprop="name">

@@ -13,7 +13,7 @@ title: Home
     </h2>
 
     <div class="post-meta">
-        <time class="post-date" itemprop="datePublished" datetime="{{post.date}}">{{ post.date | date_to_string }}</time>
+        <time class="post-date" itemprop="datePublished" datetime="{{post.date | date_to_xmlschema}}">{{ post.date | date_to_string }}</time>
         <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             by
             <span itemprop="name">
