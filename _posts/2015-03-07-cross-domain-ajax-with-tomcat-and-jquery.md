@@ -73,7 +73,7 @@ It's a [jQuery AjaxTransport](https://api.jquery.com/jquery.ajaxtransport/) exte
 This means you can simply use your *$.ajax* and its shorthand methods as you normally would, the plugin will force transmission with *XDomainRequest* when needed. All you have to do is include the plugin in your page and you're good to go.
 
 Bare in mind that only *GET* and *POST* methods are supported and that
-data will always be posted with the *Content-Type* set to *text/plain*.
+data will always be posted with the *Content-Type* set to *text/plain*. Another gotcha is that you cannot mix *HTTP* and *HTTPS*. So, a page served through *HTTP* can only make cross-origin requests using *HTTP*. The same goes for *HTTPS*.  
 
 One annoyance I've found has to do with getting proper error messages from your server when using *XDomainRequest*. When I post something to the server I always have it validated in Spring MVC using the *@Valid* annotation. When there are errors on the *BindingResult* object I return them as JSON with an HTTP status code *422,"Unprocessable Entity"*. This will trigger the *fail* handler of the *$.ajax()* promise. I can then retrieve the errors from the *jqXHR* object that's passed to the fail handler. 
 
