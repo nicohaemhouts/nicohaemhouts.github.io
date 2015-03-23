@@ -11,7 +11,7 @@ relative_permalinks: true
 # Setup
 title:               "Nico Haemhouts"
 tagline:             "Enterprise UI &amp; Web Developer"
-description:         "Peronal Blog of Nico Haemhouts, Enterprise UI &amp; Web Developer."
+description:         "Personal Blog of Nico Haemhouts, Enterprise UI &amp; Web Developer."
 url:                 http://blog.nicohaemhouts.com
 baseurl:             http://blog.nicohaemhouts.com/
 paginate:            5
