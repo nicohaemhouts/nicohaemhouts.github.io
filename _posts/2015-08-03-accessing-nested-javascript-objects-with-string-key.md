@@ -39,7 +39,7 @@ getNested(snack, 'batters/batter/0/id', '/');              // --> "1001"
 
 So, we should be able to support array indices using both square brackets (*[1]*) and no brackets at all. We
 should return some *falsy* value if we come across a non-existing property. I prefer to return *undefined* as that is
-what you would get if you tried to access an non-existing property the conventional way. 
+what you would get if you tried to access a non-existing property the conventional way. 
 
 Lastly the dot-syntax is default, but we should also support other path separators. Obviously, if any of the keys contain
 the path separator it will fail and the function should return *undefined*
@@ -67,7 +67,7 @@ function getNested (theObject, path, separator) {
 
 A couple of things about this solution:
 
-- We don't need to bother with square brackets for array indices or checking if the property is a number or not. This is because *batter['2'] === batter[2]*. 
+- We don't need to bother with square brackets for array indices or checking if the property is a number or not. This is because *batter["2"] === batter[2]*. 
 - We pass in *theObject* as the starting value for the *reduce()* because otherwise it would take the first element in the array produced by splitting the path.
 - Everything is wrapped in a *try-catch* because you can have a non-existing property in the middle of your path and then the next
 call to the reduce function would try to do *undefined['someProperty']* and that's a showstopper. 
