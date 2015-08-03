@@ -49,10 +49,11 @@ the path separator it will fail and the function should return *undefined*
 {% highlight js %}
 function getNested (theObject, path, separator) {
     try {
+        separator = separator || '.';
     
         return path.
-                replace('[', '.').replace(']','').
-                split(separator || '.').
+                replace('[', separator).replace(']','').
+                split(separator).
                 reduce(
                     function (obj, property) { 
                         return obj[property];
@@ -69,8 +70,8 @@ A couple of things about this solution:
 
 - We don't need to bother with square brackets for array indices or checking if the property is a number or not. This is because *batter["2"] === batter[2]*. 
 - We pass in *theObject* as the starting value for the *reduce()* because otherwise it would take the first element in the array produced by splitting the path.
-- Everything is wrapped in a *try-catch* because you can have a non-existing property in the middle of your path and then the next
-call to the reduce function would try to do *undefined['someProperty']* and that's a showstopper. 
+- Everything is wrapped in a *try-catch*-block because you can have a non-existing property in the middle of your path and then the next
+call to the reduce function would try to do *undefined['someProperty']*. That would be a showstopper. 
 - This doesn't work if the object is an array and the path starts with an array index wrapped in square brackets, like *'[2].foo.bar*. 
 This is because the getNested-function replaces the opening square bracket by a dot. A property path can't start with a dot. It would however 
 work if you omitted the square brackets and simply passed in *'2.foo.bar'*
