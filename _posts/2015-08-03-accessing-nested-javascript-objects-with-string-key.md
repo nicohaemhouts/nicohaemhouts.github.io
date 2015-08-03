@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript: Accessing Nested Object Properties Using a String.
+title: Accessing Nested Object Properties Using a String in JavaScript.
 tags: "JavaScript, nested properties, string, code"
 summary: A simple JavaScript function to read the nested property values on an object using a string as the path to the property.
 ---
