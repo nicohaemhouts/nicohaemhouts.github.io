@@ -47,7 +47,7 @@ I don't really need a relational database either. Also, opting for the MEAN stac
 using the excellent [angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack) (Yeoman generator).
 
 The frontend uses both ajax and websockets to retrieve and receive data. Initially when a dashboard is loaded in the webbrowser, an Angular controller
-uses ajax to fetch the data of the last *n* hours. Once Angular has the data it's then bound to a visualization directivie implemented in D3. 
+uses ajax to fetch the data of the last *n* hours. Once Angular has the data it's then bound to a visualization directive implemented in D3. 
 Form then on Angular starts listening to events on a websocket for new datapoints to be published by the backend. Every time a datapoint is received on the
 socket the visualization is updated. 
   
